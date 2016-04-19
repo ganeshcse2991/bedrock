@@ -1,0 +1,48 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+@import "../../sandstone/lib.less";
+
+.newsletter-module {
+    background: #fff;
+    color: #333;
+    margin-top: @baseLine * 2;
+
+    .container {
+        margin: 0 auto;
+        padding: (@baseLine * 2) 0 @baseLine;
+        width: @widthDesktop;
+    }
+
+    .billboard {
+        padding-bottom: 0;
+        border: 0;
+    }
+
+    .form-title {
+        .span(6);
+        min-height: 200px;
+
+        &:before {
+            float: left;
+            content: '';
+            background: @mozillaRed url(/media/img/newsletter/mozorg-newsletter.svg) 15px 15px no-repeat;
+            .background-size(125px, 125px);
+            margin-top: -20px;
+            margin-right: @baseLine;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .form-contents,
+    .form-submit {
+        .span(6);
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+}
