@@ -8,13 +8,13 @@
   {% if LANG.startswith('en-') %}
   <section class="module" id="newsletter-subscribe" data-ga-label="Love the Web? Get the Mozilla newsletter and help us keep it open and free.">
     <div class="container">
-      {{ email_newsletter_form(newsletters='mozilla-foundation', title=_('Love the Web?'), subtitle=_('Get the Mozilla newsletter and help us keep it open and free.'), button_class='white') }}
+      {{ email_newsletter_form(newsletters='mozilla-foundation', title=_('Love the Web?'), subtitle=_('Get the Mozilla newsletter and help us keep it open and free.'), button_class='light') }}
     </div>
   </section>
   {% else %}
   <section class="module" id="newsletter-signup">
     <div class="container">
-      {{ email_newsletter_form(button_class='dark') }}
+      {{ email_newsletter_form(button_class='light') }}
     </div>
   </section>
   {% endif %}

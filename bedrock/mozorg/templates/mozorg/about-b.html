@@ -8,7 +8,7 @@
   {% if LANG.startswith('en-') %}
   <aside id="newsletter-subscribe" data-ga-label="Love the Web? Get the Mozilla newsletter and help us keep it open and free.">
     <div class="content container">
-      {{ email_newsletter_form(newsletters='mozilla-foundation', title=_('Love the Web?'), subtitle=_('Get the Mozilla newsletter and help us keep it open and free.')) }}
+      {{ email_newsletter_form(newsletters='mozilla-foundation', title=_('Love the Web?'), subtitle=_('Get the Mozilla newsletter and help us keep it open and free.'), button_class='light') }}
     </div>
   </aside>
   {% endif %}

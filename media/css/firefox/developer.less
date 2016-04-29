@@ -80,16 +80,6 @@
     }
 }
 
-.download-button {
-    .download-link {
-        .button-flat;
-        line-height: inherit;
-    }
-    small.download-other.download-other-desktop {
-        display: block !important;
-    }
-}
-
 .android,
 .ios {
     .download-button {
@@ -232,7 +222,7 @@
 .dev-footer-download {
     .span(6);
     min-height: 145px;
-    padding: @baseLine*2 0;
+    padding: (@baseLine * 2) 0;
     .at2x('/media/img/firefox/developer/footer-logo.png', 145px, 145px);
     background-repeat: no-repeat;
     background-position: 0 @baseLine*2;
@@ -241,7 +231,7 @@
         margin-left: 160px;
         .download-link {
             display: block;
-            padding: 0;
+            padding: 10px 30px;
         }
     }
 }

@@ -7,7 +7,7 @@
     <p role="heading" class="download-heading">{{ _('Download Firefox') }} — {{ locale_name|safe }}</p>
     <ul>
       {% for plat in builds -%}
-        <li><a href="{{ plat.download_link_direct or plat.download_link }}" class="button green">{{ plat.os_arch_pretty or plat.os_pretty }}</a></li>
+        <li><a href="{{ plat.download_link_direct or plat.download_link }}" class="download-link button green">{{ plat.os_arch_pretty or plat.os_pretty }}</a></li>
       {%- endfor %}
     </ul>
   </div>
@@ -30,7 +30,7 @@
   {% if show_desktop %}
     {# unrecognized/unsupported platform #}
     <div class="unrecognized-download">
-      {{ _("Your system may not meet the requirements for Firefox, but you can try one of these versions:") }}
+      <p>{{ _('Your system may not meet the requirements for Firefox, but you can try one of these versions:') }}</p>
       {{ alt_buttons(builds) }}
     </div>
     <p class="unsupported-download">
@@ -57,7 +57,7 @@
                {% if channel == 'beta' %}
                  <strong class="download-title">{{ _('<span>Firefox Beta</span> for Android') }}</strong>
                {% elif channel == 'alpha' %}
-                 <strong class="download-title">{{ _('<span>Firefox Aurora</span> for Android') }} {{ plat.arch_pretty }}</strong>
+                 <strong class="download-title">{{ _('<span>Firefox Aurora</span> for Android') }}</strong>
                {% else %}
                  <strong class="download-title">{{ _('<span>Firefox</span> for Android') }}</strong>
                {% endif %}

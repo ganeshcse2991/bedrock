@@ -158,6 +158,7 @@
           <div class="secondary">
             {{ download_firefox(alt_copy=_('Free Download'),button_color='transparent-light',dom_id='promo-download-fx-button') }}
             <a class="fxos-link" href="{{ url('firefox.desktop.index') }}">{{ _('Learn more') }}</a>
+            <a class="unrecognized-short-link" href="{{ url('firefox.new') }}">{{_('Download Firefox')}}</a>
           </div>
         </li>
       {% if LANG.startswith('en-') %}

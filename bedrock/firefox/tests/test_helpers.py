@@ -190,11 +190,6 @@ class TestDownloadButtons(TestCase):
         eq_(pq(list[0]).attr('class'), 'os_android armv7up api-15')
         eq_(pq(list[1]).attr('class'), 'os_android x86')
 
-        list = doc('.download-other .arch')
-        eq_(list.length, 2)
-        eq_(pq(list[0]).attr('class'), 'arch armv7up api-15')
-        eq_(pq(list[1]).attr('class'), 'arch x86')
-
     @patch.object(firefox_android._storage, 'data',
                   Mock(return_value=dict(alpha_version='47.0a2')))
     def test_legacy_aurora_android(self):

@@ -144,11 +144,10 @@
 
     #buttons-static,
     #buttons {
+        th,
         td {
-            text-align: right;
-            div {
-                text-align: left;
-            }
+            text-align: left;
+            padding-bottom: @baseLine;
         }
         clear: both;
         .clearfix;
@@ -171,6 +170,13 @@
         .span_guide(9);
         .example {
             margin-bottom: @baseLine;
+        }
+    }
+
+    .fx-privacy-link {
+        a:link,
+        a:visited {
+            color: #000;
         }
     }
 }
