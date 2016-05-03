@@ -4,6 +4,8 @@
 
 {% extends "mozorg/contribute/tasks/taskview-base.html" %}
 
+{% add_lang_files "mozorg/contribute/signup" %}
+
 {% block page_title %}{{ _('Install Mozilla Stumbler for Android') }}{% endblock %}
 
 {% block taskview_title %}{{ _('Map the wireless networks in your neighborhood.') }}{% endblock %}
@@ -19,7 +21,7 @@
       <div class="step-content">
         {{ high_res_img('contribute/signup/stumbler.png', {'alt': '', 'width': '620', 'class': 'feature-img'}) }}
         <a rel="external" class="stumbler-button" href="{{ settings.GOOGLE_PLAY_FIREFOX_LINK }}" target="_blank" data-action="install" data-task="stumbler" data-step="one" data-complete="true">
-          {{ high_res_img('contribute/signup/google-play.png', {'alt': _('Get it on Google Play'), 'width': '200', 'height': '59', 'data-action': 'install', 'data-task': 'stumbler', 'data-step': 'one', 'data-complete': 'true'}) }}
+          {{ high_res_img('firefox/android/btn-google-play.png', {'alt': _('Get it on Google Play'), 'width': '152', 'height': '45', 'l10n': True, 'data-action': 'install', 'data-task': 'stumbler', 'data-step': 'one', 'data-complete': 'true'}) }}
         </a>
       </div>
     </li>

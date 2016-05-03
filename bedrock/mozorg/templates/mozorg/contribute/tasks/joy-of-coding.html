@@ -4,6 +4,8 @@
 
 {% extends "mozorg/contribute/tasks/taskview-base.html" %}
 
+{% add_lang_files "mozorg/contribute/signup" %}
+
 {% block page_title %}{{ _('Watch: The Joy of Coding') }}{% endblock %}
 
 {% block taskview_title %}{{ _('Watch The Joy of Coding, then discuss it with other Mozillians') }}{% endblock %}
@@ -20,7 +22,7 @@
         <video id="joc" preload="none" controls poster="{{ static('img/contribute/signup/joc_poster.png') }}" data-action="play" data-task="joyofcoding" data-step="one" data-complete="true">
           <source src="https://videos.cdn.mozilla.net/uploads/Videos%20creative/joc-video.mp4" type="video/mp4" />
         </video>
-        <button type="button" class="button-blue watch" data-action="play" data-task="joyofcoding" data-step="one" data-complete="true">Watch Video</button>
+        <button type="button" class="button-blue watch" data-action="play" data-task="joyofcoding" data-step="one" data-complete="true">{{ _('Watch the video') }}</button>
         <h4>{{ _('Get involved') }}</h4>
         {{ _('<a href="%s" id="get-involved" target="_blank">Join the Coding Community</a>  and start collaborating with other Mozillians around the world.')|format('https://wiki.mozilla.org/Contribute/Coding') }}
       </div>

@@ -4,6 +4,8 @@
 
 {% extends "mozorg/contribute/tasks/taskview-base.html" %}
 
+{% add_lang_files "mozorg/contribute/signup" %}
+
 {% block page_title %}{{ _('Tweet to @StartMozilla and see how your technical skills can contribute') }}{% endblock %}
 
 {% block more_tasks %}{{ url('mozorg.contribute.signup') }}?v=2{% endblock %}
